@@ -9,3 +9,23 @@
     padding: 20px;
     border-radius: 50px;
 }
+
+.container2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    width:200px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+
+@media screen and (max-width:756px){
+    .container{
+        flex-direction: column;
+    }
+}
