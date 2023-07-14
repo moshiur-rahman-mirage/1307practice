@@ -39,7 +39,7 @@ img{
 }
 
 .Vcollage img{
-    height: 50%;
+    height: calc((100% - 5px)/2 );
 }
 
 .boximg{
@@ -52,5 +52,17 @@ img{
 @media screen and (max-width:756px){
     .container{
         flex-direction: column;
+    }
+}
+
+
+/* Collage Responsive media */
+@media screen and (max-width:756px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .boximg{
+        grid-template-columns: repeat(1,1fr);
     }
 }
